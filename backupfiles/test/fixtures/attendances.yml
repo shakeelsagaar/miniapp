@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  month: MyString
+  subject: MyString
+  status: MyString
+  student_id: 
+
+two:
+  month: MyString
+  subject: MyString
+  status: MyString
+  student_id: 

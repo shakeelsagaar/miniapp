@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<p style="color: #555;">
+  <strong>Name:</strong>
+  <%= @teacher.name %>
+</p>
+<p style="color: #555;">
+  <strong>Teacher Id:</strong>
+  <%= @teacher.id %>
+</p>
+
+<%= link_to 'Edit', edit_teacher_path(@teacher) %> |
+<%= link_to 'Back', teachers_path %>

@@ -1,0 +1,27 @@
+<%= form_for(@teach) do |f| %>
+  <% if @teach.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@teach.errors.count, "error") %> prohibited this teach from being saved:</h2>
+
+      <ul>
+      <% @teach.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+  
+    <%= f.label :teacher_id %><br>
+    <%= f.collection_select(:teacher_id, Teacher.all, :id, :name) %>
+
+  </div>
+  <div class="field">
+    <%= f.label :subject_id %><br>
+    <%= f.collection_select(:subject_id, Subject.all, :id, :subject_title) %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p style="color: #555;">
+  <strong>Student name:</strong>
+  <%= @student.student_name %>
+</p>
+
+<p style="color: #555;">
+  <strong>Father name:</strong>
+  <%= @student.father_name %>
+</p>
+
+<p style="color: #555;">
+  <strong>Rollnumber:</strong>
+  <%= @student.rollnumber %>
+</p>
+
+<p style="color: #555;">
+  <strong>Course:</strong>
+  <%= @student.course %>
+</p>
+
+<p style="color: #555;">
+  <strong>Semester:</strong>
+  <%= @student.semester %>
+</p>
+
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Back', students_path %>

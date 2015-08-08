@@ -1,0 +1,71 @@
+ tr th{
+				color:green;
+				background-color: orange;
+				border-radius: 4px;
+				text-align:center;
+}
+thead tr th{
+				color:green;
+				background-color: orange;
+				border-radius: 4px;
+				
+}   
+ #container {
+        background-color: #1E90FF;
+        border: 1px solid #E0E0E0;
+        width: 900px; 
+				margin:auto;       
+        border-radius: 3px;
+				height:900px;    
+    }
+    #container p {
+        font-family:calibri;
+        font-size: 15px;
+        color: white;
+        text-align: center;
+        margin:0;
+    }
+    .banner {
+        background-color: #1E90FF;
+        width: 900px;
+        height: 150px;
+    }
+    .banner p {
+        height: 150px;
+        line-height: 150px;
+    }
+    .nav {
+        background-color: white;
+        width: 891px;
+        height: 22px;
+				border: 1px solid #464646;
+				padding:3px;
+    }
+    .content-wrapper {
+        width: 1090px;
+        padding: 5px;
+    }
+    .content-wrapper .col1, .content-wrapper .col2 {
+        display: inline-block;
+        vertical-align: top;
+        border: 1px solid #464646;
+        background-color: #ffffff;        
+    }
+    .content-wrapper .col1 {
+        width: 705px;
+        height: 706px;
+	
+    }
+    .content-wrapper .col2 {
+        width: 175px;
+        height: 706px;
+        margin-left: 2px;
+    }
+    .footer {
+        width: 900px;
+        background-color:#1E90FF;
+        height: 20px;
+				margin:auto;
+				padding-top:2px;
+				text-align:center;
+    }

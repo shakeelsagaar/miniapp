@@ -1,0 +1,20 @@
+ <% if user_signed_in? %>
+
+          <%= link_to destroy_user_session_path, method: :delete do %>
+          	<button type="button" class="btn btn-default navbar-bin">log Out</button>
+          <% end %>
+          
+      		<div class="navbar-right navbar-brand">Hello, <%= current_user.email %></div>
+
+          <% else %>
+          
+          	 <%= link_to new_user_session_path do %>
+          		<button type="button" class="btn btn-default navbar-btn">Log in</button>
+             <% end %>	
+         <% end %>
+<h1> <center> Welcome Online Attendance Management System</h1></center>
+<h2> <center> Department Of Computer Science <h2></center>
+<h3> <center> University Of Balochistan </h3> </center>
+<center>
+<%=image_tag("dprt.jpg", :alt=>"user", :class=>"round", :width=>"600px", :height=>"250")%></center>
+

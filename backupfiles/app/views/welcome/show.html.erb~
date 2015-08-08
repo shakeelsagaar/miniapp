@@ -1,0 +1,31 @@
+<h1><center>Monthly Attendance Of Computer Science Department</center> </h1>
+
+<table align="center">
+
+ 	<tr>
+  	<th>Roll# </th>
+ 		<th>Student Name</th>
+  	<th>Father Name</th>
+  	<th>Course</th>
+		<th>Semester</th>
+		<th> Subject </th>
+	 	<th>Month</th>
+	 	<th>Status</th>  
+	 </tr>
+	 
+		 <% @attendances.each do |attendance| %>
+	 
+	 <tr>
+		<td><%= attendance.student.rollnumber %></td>
+		<td><%= attendance.student.student_name %></td>
+		<td><%= attendance.student.father_name %></td>
+		<td><%= attendance.student.course %></td>
+		<td><%= attendance.student.semester %></td>
+		<td><%= attendance.subject %></td> 
+		
+		<td><%= attendance.month %></td>
+		<td><%= attendance.status%></td>
+
+	</tr>
+	<% end %>
+</table>

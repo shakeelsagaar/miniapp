@@ -1,0 +1,28 @@
+	<div id="container">
+	<div class="banner">
+		<%=image_tag("cv.jpg", :alt=>"user", :class=>"round", :width=>"900px", :height=>"150")%>
+		</div>
+
+  <div class="nav">
+		<tr>	
+			<th><%= link_to 'Home', root_path %> |</th>
+			<th><%= link_to 'Add Teachers', teachers_path %> |</th>
+			<th><%= link_to 'Add Subjects', subjects_path %> |</th>
+			<th><%= link_to 'Add Students', students_path %> |</th>
+			<th><%= link_to 'Add Attendances', attendances_path %> |</th>
+			<th><%= link_to 'Add Teaches', teaches_path %> |</th>
+			<th><%= link_to 'Add Studies', studies_path %> |</th>
+			<th><%= link_to 'Show Attendance', welcome_show_path %> |</th>
+			
+
+		</tr>
+	</div>
+	
+	<div class="content-wrapper">
+	<div class="col1"> <%= yield %>
+	</div>
+	
+	<div class="col2"> Mini project </div>     
+
+ </div>
+ </div>
